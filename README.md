@@ -11,10 +11,9 @@ fast gui encoder and decoder tool for ctf
 $ git clone https://github.com/Madhava-mng/turbo-coder-ctf.git
 ```
 
-**aditional package:**
+**run:**
 
 ```python
-$ python3 -m pip install codelib
-
-$ apt install python3-tk
+$ ./turbo-coder.py
 ```
+![](.img.png)
