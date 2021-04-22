@@ -1,3 +1,6 @@
+#!/bin/env python3
+
+
 from base64 import *
 from codelib.rot import *
 try:
