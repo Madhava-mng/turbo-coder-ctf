@@ -13,7 +13,7 @@ root.title('turbo coder ctf')
 frame=LabelFrame(root,text="values",padx=71,pady=70,bg="gray")
 frame2=LabelFrame(root,text="theams", padx=143,  pady=60,bg="gray")
 frame3=LabelFrame(root,text="expresion", padx=108,  pady=40,bg="gray")
-frame. grid(row= 1, column= 0)
+frame.grid(row= 1, column= 0)
 frame3.grid(row= 2, column= 0)
 frame2.grid(row= 3, column= 0)
 
@@ -23,12 +23,15 @@ bgc = "gray"
 
 def notify(value, bg):
 	global bgc
-	msg_label = Label(root, text=value, width=58, borderwidth=3, bg=bg, fg="black")
-	msg_label.grid(row=4,column=0)
-	_sleep(2)
-	msg_label.destroy()
-	msg_label = Label(root, width=58, borderwidth=3, bg=bgc)
-	msg_label.grid(row=4,column=0)
+	try:
+		msg_label = Label(root, text=value, width=58, borderwidth=3, bg=bg, fg="black")
+		msg_label.grid(row=4,column=0)
+		_sleep(1)
+		msg_label.destroy()
+		msg_label = Label(root, width=58, borderwidth=3, bg=bgc)
+		msg_label.grid(row=4,column=0)
+	except:
+		exit()
 
 def ecode():
 	a=e1.get().encode()
